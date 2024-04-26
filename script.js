@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   let storedTheme = localStorage.getItem('theme');
 
-  // If no theme is stored or it's invalid, use the default theme
+  // If no theme is stored or it's invalid, use the default theme (light mode)
   if (storedTheme !== 'dark' && storedTheme !== 'light') {
-    storedTheme = prefersDarkMode ? 'dark' : 'light';
+    storedTheme = 'light'; // Default to light mode
   }
 
   // Set initial theme
