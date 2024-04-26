@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Yaksho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <!-- Interactive Background -->
+    <div class="interactive-bg">
+        <div class="rain"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#profile" class="header-link">rajeshyaksho.com</a>
+        <!-- Theme Toggle Switch -->
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav id="desktop-nav">
+        <div class="logo">@rajeshyaksho</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Credentials</a></li>
+            <li><a href="attribution.html">Attribution</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+        <div class="logo">@rajeshyaksho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                    <li><a href="attribution.html" onclick="toggleMenu()">Attribution</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Profile Section -->
+     <section id="profile">
+      <div class="section__text">
+        <h1 class="title1">Rajesh Yaksho</h1>
+        <div class="title-wrapper">
+            <h1 class="title1">Welcome To My Portfolio!</h1>
+        </div>        
+          <p>Glad You Made It!</p>
+            <div class="socials-container">
+              <a href="https://www.linkedin.com/in/rajeshyaksho/" target="_blank">
+                  <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"/>
+              </a>
+              <a href="https://github.com/rajeshyaksho" target="_blank">
+                  <img src="./assets/github.png" alt="GitHub" class="icon" />
+              </a>
+          </div>
+        </div>
+    </section>
+
+    <div class="end-of-line"></div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/pro-pic.jpg" alt="Profile picture of Rajesh Yaksho" class="about-pic" />
+            </div>
+            <!-- Education Container -->
+            <a href="education.html" target="_blank" class="education-container">
+                <div class="education-details">
+                    <h3>Education</h3>
+                    <p>B.Sc. in Computer Science<br>The University of Texas at Arlington</p>
+                </div>
+            </a>
+            <!-- Intro Details -->
+            <div class="intro-details">
+                <p>Hello! I'm Rajesh Yaksho, a passionate Computer Science student based in the DFW metroplex.</br>
+                    I am captivated by the potential of software engineering to create innovative solutions and transform user experiences.</br>
+                    My passion lies in crafting user-friendly websites, exploring the world of AI, and delving into the field of game design.</br>
+                    I'm eager to join a team where I can leverage my skills and immerse myself in the world of software engineering, continuously learning and growing alongside industry experts.</br>
+                    This website showcases the projects and certifications I have accomplished over time. </br>
+                    Let's innovate together!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="end-of-line"></div>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        
+        <!-- Professional Experiences -->
+        <h2 class="experience-sub-title">Professional Experiences</h2>
+        <article class="article-container">
+            <h3><a href="https://www.uta.edu/ubms/" target="_blank">Technical Assistant at UBMS at the University of Texas at Arlington</a> (March 2023 - Current)</h3>
+            <ul>
+                <li>Effectively managed the Blog page of Upward Bound Math and Science Center using HTML and CSS within WordPress, resulting in a 25% increase in user interaction.</li>
+                <li>Accomplished a crucial 2-week project of organizing course schedules and classroom assignments for 86 high school students, achieving a 95% accuracy rate using Microsoft Excel.</li>
+                <li>Established a comprehensive data management system using Blumen Online and MS Excel, increasing data accessibility by 30% and contributing to enhanced organizational decision-making.</li>
+            </ul>
+        </article>
+
+        <!-- Technical Skills -->
+        <h2 class="experience-sub-title">Technical Skills</h2>
+        <article>
+            <h3>Programming</h3>
+            <ul>
+                <li>Python3, C, C++, Java, Android, MySQL, XML</li>
+            </ul>
+            <h3>Web and App Development</h3>
+            <ul>
+                <li>JavaScript, HTML, CSS, Flask, Firebase, React, NodeJS</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+                <li>Git, WordPress, MS Excel, NumPy, Keras, Wireshark, Open-CV, Blumen, QuestionPro, Adobe Illustrator & Photoshop</li>
+            </ul>
+        </article>
+
+        <!-- Leadership Experiences -->
+        <h2 class="experience-sub-title">Leadership Experiences</h2>
+        <article>
+            <h3>Student Advisor - Trio Pre-College Programs at the University of Texas at Arlington (June 2023 - July 2023)</h3>
+            <ul>
+                <li>Facilitated career-focused instruction in engineering to 24 high school students, delivering three-hour sessions weekly.</li>
+                <li>Tutored 20 high school sophomores in Calculus and Algebra 2 for two hours a week.</li>
+            </ul>
+        </article>
+    </section>
+
+    <div class="end-of-line"></div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+            <!-- Project 1 -->
+            <div class="project-container" data-url="https://github.com/project1" data-page-url="project1.html">
+                <div class="project-content">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                    <div class="project-desc">
+                        <h2 class="experience-sub-title project-title">Recipe-Book (Android, Java, Firebase)</h2>
+                        <p>Recipe Book is an application that will allow users to create a collection of recipe which they can view in detail.</p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://github.com/rajeshyaksho/RecipeBook'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-container" data-url="https://github.com/project1" data-page-url="project2.html">
+                <div class="project-content">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    <div class="project-desc">
+                        <h2 class="experience-sub-title project-title">Real-Time Object Detection (In Progress)</h2>
+                        <p>Real-Time Object Detection is based on AI and CV techniques to detect and classify objects in real-time using a webcam feed.</p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://github.com/rajeshyaksho/ObjectDetection'">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+        <!-- Project 3 -->
+        <div class="project-container" data-url="https://github.com/project1" data-page-url="project3.html">
+          <div class="project-content">
+              <img src="./assets/project-2.png" alt="Project 3" class="project-img" />
+              <div class="project-desc">
+                  <h2 class="experience-sub-title project-title">ELSA (Java)</h2>
+                  <p>ELSA is a virtual storefront management system, allowing users to create, customize, and manage their digital stores easily through simple commands in the terminal.</p>
+                  <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://github.com/rajeshyaksho/ELSA'">GitHub</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-container" data-url="https://github.com/project1" data-page-url="project4.html">
+        <div class="project-content">
+            <img src="./assets/project-2.png" alt="Project 4" class="project-img" />
+            <div class="project-desc">
+                <h2 class="experience-sub-title project-title">Library Management System (MySQL)</h2>
+                <p>LMS is a Database project aimed to integrate book information, borrower details, and library branch management, facilitating day-to-day operations and enhancing user experience.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://github.com/rajeshyaksho/LMS'">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project 5 -->
+    <div class="project-container" data-url="https://github.com/project1" data-page-url="project4.html">
+      <div class="project-content">
+          <img src="./assets/project-2.png" alt="Project 4" class="project-img" />
+          <div class="project-desc">
+              <h2 class="experience-sub-title project-title">Personal Portfolio (HTML, CSS, JavaScript)</h2>
+              <p>Build a personal portfolio to showcase my experiences and projects accomplished over time.</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://github.com/rajeshyaksho'">GitHub</button>
+              </div>
+          </div>
+      </div>
+  </div>  
+      <!-- Add more projects as needed -->
+    </section>
+
+    <div class="end-of-line"></div>
+
+    <!-- Certifications Section -->
+<section id="certifications">
+  <h1 class="title">Credentials</h1>
+  <div class="certifications-container innercontainer">
+      <!-- Certification 1 -->
+      <div class="certification">
+          <h2>Career Ready Guide</h2>
+          <p>Comprehensive 6-hour course to equip individuals with the essential career skills.</p>
+          <a href="path/to/certification-document-1.pdf" target="_blank">View Certification</a>
+      </div>
+      
+      <!-- Certification 2 -->
+      <div class="certification">
+          <h2>Coming Soon!</h2>
+          <p>This certification is currently in progress. Stay tuned for more updates!</p>
+          <a href="path/to/certification-document-2.pdf" target="_blank">View Certification</a>
+      </div>
+      
+      <!-- Certification 3 -->
+      <div class="certification">
+          <h2>Coming Soon!</h2>
+          <p>This certification is currently in progress. Stay tuned for more updates!</p>
+          <a href="path/to/certification-document-2.pdf" target="_blank">View Certification</a>
+      </div>
+      
+      <!-- Certification 4 -->
+      <div class="certification">
+          <h2>Coming Soon!</h2>
+          <p>This certification is currently in progress. Stay tuned for more updates!</p>
+          <a href="path/to/certification-document-2.pdf" target="_blank">View Certification</a>
+      </div>
+  </div>
+</section>
+
+
+    <div class="end-of-line"></div>
+
+    <!-- Contact Me Section -->
+<section id="contact">
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <div class="contact-info">
+              <a href="mailto:yakshorajesh@gmail.com">yakshorajesh@gmail.com</a>
+          </div>
+      </div>
+  </div>
+  <p class="professional-message">
+      Thank you for visiting my website. If you have any inquiries, business opportunities, or just want to say hello, feel free to reach out to me via email. I'm always eager to connect and collaborate with like-minded individuals.</br>
+       Looking forward to hearing from you!
+  </p>
+</section>
+
+      <!-- Footer Section -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Credentials</a></li>
+          <li><a href="attribution.html">Attribution</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Rajesh Yaksho. All Rights Reserved.</p>
+  </footer>
+
+    <!-- Link your JavaScript file at the end of the body -->
+    <script src="script.js"></script>
+</body>
+</html>

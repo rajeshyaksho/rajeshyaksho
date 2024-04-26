@@ -1,0 +1,768 @@
+/* GENERAL */ 
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+}
+
+.nav-links {
+  gap: 3rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(31, 26, 26);
+  text-decoration: none;
+  text-decoration-color: rgb(105, 46, 46);
+}
+
+a:hover {
+  color: rgb(110, 70, 70);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(207, 197, 197);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+#hamburger-nav {
+  display:none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.interactive-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.rain {
+  position: absolute;
+  width: 2px;
+  height: 5%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  animation: raindrop 1.5s linear infinite;
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+} 
+
+section {
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: 96vh; 
+  overflow: hidden; 
+}
+
+.end-of-line {
+  border-bottom: 1px solid rgb(27, 24, 24); 
+  margin-top: 1rem; 
+  width: 80%; 
+  height: 2px; 
+  background-color: rgb(36, 30, 30); 
+  margin-top: 1rem; 
+  margin-bottom: 1rem; 
+  border-radius: 2px; 
+  margin-left: auto; 
+  margin-right: auto;
+    
+  background: linear-gradient(to right, #ccc, #bbb, #ccc);
+    
+  box-shadow: 0 2px 4px rgba(80, 74, 74, 0.2);
+    
+  transition: background-color 0.3s ease-in-out;
+
+ &:hover {
+      background-color: #3a3333;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 90vh;
+}
+
+.title1 {
+  font-size: 6rem; 
+  font-weight: 300;
+  text-align: center;
+  margin-top: -8rem;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 500;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 10rem; /* Increased the gap */
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Adjusted gap */
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+#about {
+  position: relative;
+  padding-top: 3rem; 
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+  height: 300px;
+  width: 300px;
+  display: block; 
+  float: left; 
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center; 
+  flex-direction: row; 
+  align-items: center; 
+  height: auto;
+ }
+
+.education-container {
+  flex: 0.5;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content:safe;
+  padding: 1rem 1rem; 
+  margin: 1rem 0; 
+  border: 2px solid #ddd6d6; 
+  border-radius: 0.4rem; 
+  background-color: #f0f0f0; 
+  color: #000000; 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.education-container:hover {
+  transform: scale(1.05); 
+  box-shadow: 2px 2px 5px rgba(15, 15, 15, 0.2); 
+  z-index: 5; 
+}
+
+.intro-details {
+  position: absolute; 
+  bottom: 1rem; 
+  width: 100%; 
+  text-align: left;  
+  font-size: 1.2rem;
+}
+
+#experience {
+  padding: 2.5rem; 
+}
+
+#experience .title {
+  font-size: 3rem; 
+  font-weight: bold; 
+  margin-bottom: 1rem; 
+  text-align: center; 
+  color: #080808; 
+}
+
+#experience .experience-sub-title {
+  font-size: 1.5rem; 
+  font-weight: semi-bold; 
+  color: #34495e; 
+  margin-bottom: 0.75rem; 
+}
+
+#experience h3 {
+  font-size: 1.25rem; 
+  font-weight: bold; 
+  margin-bottom: 0.5rem; 
+  color: #4a4a4a; 
+}
+
+#experience p,
+#experience ul {
+  font-size: 1.15rem; 
+  margin-bottom: 0.75rem; 
+}
+
+#experience li {
+  margin-bottom: 0.5rem; 
+  list-style-type: disc; 
+  padding-left: 1rem; 
+}
+
+
+#experience a {
+  color: #2072c4;
+  text-decoration:lightpink; 
+}
+
+.project-container {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.project-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-img {
+  width: 15%;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-desc {
+  width: 65%; /* Adjusted width */
+  flex: 1;
+}
+
+.project-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  margin-top: 10px;
+  display: flex; /* Added flexbox */
+  justify-content: flex-end; /* Align button to the right */
+}
+
+.project-btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.certifications-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 2rem; 
+  margin-top: 2rem;
+}
+
+.certifications-container .certification {
+  flex: 0 1 calc(33.333% - 20px); 
+  background-color: #f5f5f5; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.certifications-container .certification h2 {
+  font-size: 1.5rem; 
+}
+
+
+.certifications-container .certification a {
+  display: block;
+  margin-top: 10px; 
+  color: #333; 
+}
+
+
+.certifications-container .certification a:hover {
+  text-decoration: underline; 
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+footer {
+  background-color: #616064; 
+  color: #ffffff; 
+  text-align: center;
+  padding: 20px; 
+  margin-top: -70px; 
+}
+
+footer p {
+  margin: 0; 
+  padding: 10px 0; 
+  font-size: 20px; 
+}
+
+footer nav ul {
+  margin: 10px 0; 
+}
+
+footer .nav-links-container ul {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+footer .nav-links-container ul li a {
+  color: #ffffff; 
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+footer .nav-links-container ul li a:hover {
+  text-decoration-line: underline; 
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000000;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  --background-color: #616064;
+  --text-color: #ffffff;
+  /* Other existing styles for dark mode */
+  
+  /* Education container remains black in dark mode */
+  .education-container {
+      color: #000000;
+  }
+  
+  /* Experience section: title, subtitle, and header in white */
+  #experience .title, #experience .experience-sub-title, #experience h3 {
+      color: #ffffff;
+  }
+  
+  /* Project section: project description remains black in dark mode */
+  .project-desc {
+      color: #000000;
+  }
+  
+  /* Contact me section: yakshorajesh@gmail.com in white */
+  #contact .contact-info-container p {
+      color: #ffffff;
+  }
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* Dark mode styles for containers */
+[data-theme="dark"] .container,
+[data-theme="dark"] .education-container,
+[data-theme="dark"] .project-container {
+    background-color: #333333; /* Dark background color */
+    color: #FFFFFF; /* Light text color */
+}
+
+/* Add more container classes if necessary */
+[data-theme="dark"] .certifications-container .certification {
+    background-color: #ffffff; /* Darker background for certifications */
+    color: #000000; /* Light text color */
+}
+
+/* Change the color of the "Technical Assistant" link in the Experience section to orange */
+#experience h3 a[href="https://www.uta.edu/ubms/"] {
+    color: orange; /* Change the link color to orange */
+    text-decoration: underline;
+}
+
+/* Contact Me section styles for dark mode */
+[data-theme="dark"] #contact .contact-info-upper-container {
+  background-color: #ffffff; /* Adjust the background color to a darker shade */
+  border: 1px solid #555; /* Adjust the border color */
+}
+
+/* Change the background color of the .project-btn:hover button to white in dark mode */
+[data-theme="dark"] .project-btn:hover {
+  background-color: rgb(56, 71, 50); /* Change the background color to white */
+}
+
+/* Use CSS variables throughout your stylesheet */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Adjust text color for specific sections */
+nav,
+footer,
+footer p,
+.nav-links a,
+#profile .title,
+#contact .title,
+.section__text p,
+.experience-sub-title,
+.project-title,
+.section__text__p2 
+#about .text-container p {
+  color: var(--text-color); /* Ensure text color changes in specific sections */
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+/* Switch styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px; /* Reduced the width */
+  height: 24px; /* Reduced the height */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e0e0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 24px; /* Adjusted to match the height */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* Reduced the height */
+  width: 20px; /* Reduced the width */
+  left: 2px; /* Adjusted to maintain consistency */
+  bottom: 2px; /* Adjusted to maintain consistency */
+  background-color: rgb(29, 24, 24);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #d1dce6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1f2122;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px); /* Adjusted for the smaller size */
+  -ms-transform: translateX(16px); /* Adjusted for the smaller size */
+  transform: translateX(16px); /* Adjusted for the smaller size */
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; 
+  background-color: #252525a8; 
+  color: #fff; 
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  padding: 0 20px; 
+  z-index: 1000; 
+}
+
+.header-link {
+  text-decoration: none;
+  color: #ffffff; 
+  margin-left: 20px; 
+  transition: background-color 0.3s ease; 
+}
+
+.header-link:hover {
+  background-color: #eee9e9; 
+}
+
+#desktop-nav {
+  margin-top: 45px; 
+}
+
+/* Dark Mode Styles */
+.header.dark-mode {
+  background-color: #616064; /* Dark mode background color */
+  color: #fff; /* Dark mode text color */
+}
+
+.header.dark-mode .header-link {
+  color: #fff; /* Dark mode link text color */
+}
+
+.header.dark-mode .header-link:hover {
+  background-color: #555; /* Change background color on hover in dark mode */
+}
+
+/* Body styles using flexbox layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height to full viewport height */
+}
+
+/* Main content styles */
+main {
+  flex: 1; /* Let main content fill available space */
+  padding: 20px; /* Add padding as desired */
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center; /* Center the footer text */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.title-wrapper {
+  display: none; /* Hide the new title initially */
+  font-size: 70px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+}
+
+.title1 {
+  font-size: 6rem; /* Adjust font size as needed */
+  font-weight: 300px; /* Adjust font weight as needed */
+}
+
+/* Set text color to black for <p> elements within .certification in dark mode */
+[data-theme="dark"] .certification p {
+  color: black;
+}
+
+.professional-message {
+  font-size: 1.3rem;
+  text-align: center;
+}
