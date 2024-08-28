@@ -1,233 +1,232 @@
 
-  @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 3rem;
-      padding-top: 40vh;
-    }
-  
-    .about-containers {
-      flex-wrap: wrap;
-    }
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 3rem;
+    padding-top: 40vh;
   }
 
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-      position: relative;
-      top: 60px;
-      z-index: 100;
-    }
-   
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-      transition: all 0.3s ease; /* Smooth transitions */
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
 
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    position: relative;
+    top: 60px;
+    z-index: 100;
+  }
+ 
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+    transition: all 0.3s ease; /* Smooth transitions */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #contact,
+  footer {
+    height: 42vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: -2rem;
+    font-size: 1.5rem;
+  }
+  .title1 {
+    font-size: 4rem;
+  }
+  #about {
+    margin-top: -2rem;
+  }
+
+  #about .section__pic-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem; /*For adjustment*/
+  }
+
+  #about .section-container {
+    flex-direction: column; /* Stack the containers vertically on smaller screens */
+    align-items: center; /* Center the containers horizontally */
+  }
+
+  #about .education-container {
+   flex-direction: column;
+   max-width: 100%;
+  }
+
+  #about .intro-details {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  #experience {
+    margin-bottom: -2rem;
+  }
+  #experience .title {
+    font-size: 2rem;
+    margin-top: -3rem;
+  }
+  #experience .experience-sub-title {
+    justify-content: none;
+    font-size: 1.25rem;
+  }
+  #experience h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust spacing and margins */
+  #experience .article-container,
+  #experience article {
+    margin-bottom: 2rem;
+  }
+
+  /* Improve list item styles */
+  #experience ul {
+    padding-left: 0.5rem;
+  }
+
+  /* Adjustments for Project Containers */
+  .project-container {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem 0;
+  }
+  .project-img {
+    width: 40%;
+  }
+  /* Style Project Titles */
+  .project-title {
+    font-size: 1rem;
+  }
+  /* Style Project Descriptions */
+  .project-desc p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  /* Customize Project Buttons */
+  .project-btn {
+    background-color: #ffffff; /* Green */
+    color: rgb(12, 12, 12);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .project-btn:hover {
+    background-color: #333633; /* Darker Green */
+  }
+
+  .certification {
+    flex: 0 1 100%;
+  }
+
+  /* Style Certification Titles */
+  .certification h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Style Certification Descriptions */
+  .certification p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Customize Certification Links */
+  .certification a {
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .certification a:hover {
+    background-color: #f0f0f0; /* Light Gray */
+  }
+
+  article {
+    font-size: 2rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  #contact {
+    margin-top: -3rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0 auto;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
   }
   
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 42vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: -2rem;
-      font-size: 1.5rem;
-    }
-    .title1 {
-      font-size: 4rem;
-    }
-    #about {
-      margin-top: -2rem;
-    }
-
-    #about .section__pic-container {
-      padding-left: 50px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 11rem; /*For adjustment*/
-    }
-
-    #about .section-container {
-      flex-direction: column; /* Stack the containers vertically on smaller screens */
-      align-items: center; /* Center the containers horizontally */
-    }
-  
-    #about .education-container {
-     margin-bottom: 37rem;
-    }
-
-    #about .intro-details {
-      justify-content: center;
-      width: 100%;
-      max-width: 100%;
-    }
-    #experience {
-      margin-bottom: -2rem;
-    }
-    #experience .title {
-      font-size: 2rem;
-      margin-top: -3rem;
-    }
-    #experience .experience-sub-title {
-      justify-content: none;
-      font-size: 1.25rem;
-    }
-    #experience h3 {
-      font-size: 1.2rem;
-    }
-
-    /* Adjust spacing and margins */
-    #experience .article-container,
-    #experience article {
-      margin-bottom: 2rem;
-    }
-
-    /* Improve list item styles */
-    #experience ul {
-      padding-left: 0.5rem;
-    }
-
-    /* Adjustments for Project Containers */
-    .project-container {
-      width: 100%;
-      height: 250px;
-      margin-bottom: 2rem;
-    }
-    .project-img {
-      width: 40%;
-    }
-    /* Style Project Titles */
-    .project-title {
-      font-size: 1rem;
-    }
-    /* Style Project Descriptions */
-    .project-desc p {
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
-    }
-    /* Customize Project Buttons */
-    .project-btn {
-      background-color: #ffffff; /* Green */
-      color: rgb(12, 12, 12);
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-
-    .project-btn:hover {
-      background-color: #333633; /* Darker Green */
-    }
-
-    .certification {
-      margin-bottom: 2rem;
-      width: 150%;
-    }
-  
-    /* Style Certification Titles */
-    .certification h2 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  
-    /* Style Certification Descriptions */
-    .certification p {
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
-    }
-  
-    /* Customize Certification Links */
-    .certification a {
-      background-color: #ffffff; /* White */
-      color: #000000; /* Black */
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.3s ease-in-out;
-    }
-  
-    .certification a:hover {
-      background-color: #f0f0f0; /* Light Gray */
-    }
-
-    article {
-      font-size: 2rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    #contact {
-      margin-top: -3rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0 auto;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      display: flex;
-      gap: 0.5 rem;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  .logo {
+    font-size: 1.5rem;
   }
-    
+  .nav-links {
+    display: flex;
+    gap: 0.5 rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+  
