@@ -230,3 +230,46 @@
   }
 }
   
+/* Media Queries for Attribution Page */
+
+/* General responsive adjustments */
+@media screen and (max-width: 1400px) {
+  .attribution-content {
+    padding: 1.5rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  .attribution-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1,
+  footer p {
+    font-size: 1rem;
+  }
+
+  .attribution-content h2 {
+    font-size: 1.2rem;
+  }
+}
