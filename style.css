@@ -513,6 +513,7 @@ footer {
   text-align: center;
   padding: 20px; 
   margin-top: -70px; 
+  box-sizing: border-box;
 }
 
 footer p {
@@ -774,4 +775,30 @@ footer {
 .professional-message {
   font-size: 1.3rem;
   text-align: center;
+}
+
+/* Basic styles for Attribution Page */
+
+.attribution-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attribution-content h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin-top: 40px; /* Adjust this value as needed */
 }
